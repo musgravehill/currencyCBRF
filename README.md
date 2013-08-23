@@ -1,11 +1,12 @@
 yii-currencyCBRF
 ========
-Extension for multiple currencies: update, get from DB.
-Using PHP getters: __get($currencyName)
-Currency object has options:*is_visible* - visible in dropdown list and etc.,
-*is_auto* - is auto update on __get if "date_update" expired (you can set $expireTime in config),
-*is_main* - main currency in project.
-Some currency in XML-source looks like 10 UAH == 40 RUB, so I made the normalization:  $value = $currencyXML->Value / $currencyXML->Nominal.
+**Extension for multiple currencies: update, get from DB**
+1. Using PHP getters: __get($currencyName)
+2. Currency object has options:
+..* *is_visible* - visible in dropdown list and etc.,
+..* *is_auto* - is auto update on __get if "date_update" expired (you can set $expireTime in config),
+..* *is_main* - main currency in project.
+3. Some currency in XML-source looks like 10 UAH == 40 RUB, so I made the normalization:  $value = $currencyXML->Value / $currencyXML->Nominal.
 
 
 **Requirements: PHP 5.*
