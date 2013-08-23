@@ -13,7 +13,8 @@ yii-currencyCBRF
 #How to use#
 1. Pull files to `/protected`
 2. Import yii_currency.sql to your DB.
-3. Now you have extension, appropriate model and table in DB.
+3. Insert desired currencies into table: name, is_visible, is_auto, date_update, is_main, code 
+4. Now you have extension, appropriate model and table in DB.
 
 Yii congif file:
 ```bash
